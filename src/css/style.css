@@ -48,7 +48,7 @@ section .bannerVideo video.active {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 45%;
     height: 100%;
     backdrop-filter: blur(10px);
     box-shadow: 10px 0 15px rgba(0,0,0,0.05);
@@ -119,14 +119,17 @@ section .bannerVideo video.active {
 
 .container .content .bannerText div h2 {
     color: #fff;
-    font-size: 6em;
-    line-height: 1em;
+    font-size: 7em;
+    line-height: 1.5em;
     font-weight: 700;
 }
 
 .container .content .bannerText div p {
+    width: 70%;
+    height: 70%;
     color: #fff;
     font-size: 18px;
+    text-align: justify;
     margin: 0px 0;
 }
 
@@ -135,13 +138,13 @@ section .bannerVideo video.active {
     bottom: 0;
     left: 0;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 .sci li {
     list-style: none;
-    padding: 5px;
-    margin-left: 10px;
+    padding: 0 0 10px;
+    margin-left: 15px;
 }
 
 .sci li a {
@@ -192,4 +195,8 @@ section .bannerVideo video.active {
 .controls li:hover {
     filter: invert();
     transition: .5s;
+}
+
+.menuIcon {
+    display: none;
 }

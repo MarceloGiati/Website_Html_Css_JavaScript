@@ -1,0 +1,102 @@
+/*Now, make it responsive*/
+@media (max-width:991px) {
+    
+    .container {
+        padding: 15px;
+    }
+
+    .container::before {
+        width: 100%;
+    }
+
+    .container header {
+        padding: 10px 10px;
+    }
+
+    .container .content .bannerText div h2 {
+        font-size: 3.5em;
+    }
+
+    .container .content .bannerText div p {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        text-align: justify;    
+    }
+
+    .container .content .bannerText {
+        text-align: center;
+    }
+
+    .container header ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        z-index: 1000;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container header.active ul {
+        display: flex;
+    }
+
+    .container header ul li {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .container header ul li a {
+        background: #333;
+        font-size: 1em;
+    }
+
+    .container header ul li a:hover {
+        color: #f00;
+    }
+
+    .menuIcon {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        border-radius: 30%;
+        display: initial;
+        z-index: 1000;
+        background: #fff url(../img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    /* .menuIcon:hover {
+        filter: invert();
+        transition: .5s;
+    } */
+
+    .menuIcon.active {
+        background: #fff url(../img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .sci li a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .controls li {
+        width: 60px;
+        height: 60px;
+    }
+
+}
